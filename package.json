@@ -1,0 +1,37 @@
+{
+  "name": "aegiss",
+  "version": "1.0.0",
+  "description": "Security-first, self-defending token library for Node.js. Ed25519, ChaCha20-Poly1305, CBOR, context binding. Zero dependencies.",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "token",
+    "jwt",
+    "paseto",
+    "ed25519",
+    "chacha20-poly1305",
+    "cbor",
+    "security",
+    "authentication",
+    "context-binding",
+    "zero-dependency"
+  ],
+  "author": "Salih Gultekin <me@salihgultek.in>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "files": [
+    "src",
+    "README.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "example": "node examples/basic-usage.js",
+    "example:express": "node examples/express-middleware.js"
+  }
+}
