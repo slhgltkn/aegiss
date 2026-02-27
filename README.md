@@ -45,8 +45,8 @@
 ## Requirements & install
 
 - **Runtime:** Node.js >= 18.
-- **Install:** `npm install aegiss`
-- **Import:** `const aegiss = require('aegiss');` (CommonJS). TypeScript types are provided via `src/index.d.ts`.
+- **Install:** `npm install aegiss-token`
+- **Import:** `const aegiss = require('aegiss-token');` (CommonJS). TypeScript types are provided via `src/index.d.ts`.
 
 ---
 
@@ -65,7 +65,7 @@
 ## Quick start
 
 ```js
-const { generateKeys, sign, verify, getClientInfo } = require('aegiss');
+const { generateKeys, sign, verify, getClientInfo } = require('aegiss-token');
 
 // 1. Generate key pair (do once; store securely)
 const { publicKey, privateKey } = generateKeys();
@@ -161,7 +161,7 @@ Options: `minIat`, `revokedJtis` (same as `verify`), `maxFailedAttempts` (positi
 ## Express middleware
 
 ```js
-const { createVerifyMiddleware, getClientInfo, sign } = require('aegiss');
+const { createVerifyMiddleware, getClientInfo, sign } = require('aegiss-token');
 
 const { publicKey, privateKey } = generateKeys();  // or load from env
 
@@ -199,7 +199,7 @@ app.post('/logout', createVerifyMiddleware(publicKey, { revokedJtis }), (req, re
 Encryption is separate from tokens (no context binding). Use for symmetric secret data.
 
 ```js
-const { encrypt, decrypt } = require('aegiss');
+const { encrypt, decrypt } = require('aegiss-token');
 const crypto = require('crypto');
 
 const key = crypto.randomBytes(32);  // 32 bytes required
@@ -236,7 +236,7 @@ For more hardening ideas (key rotation, path binding, distributed block list, et
 Example:
 
 ```js
-const { verify, VerificationError } = require('aegiss');
+const { verify, VerificationError } = require('aegiss-token');
 try {
   const payload = verify(token, publicKey, getClientInfo(req));
   // use payload

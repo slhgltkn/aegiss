@@ -72,19 +72,43 @@ function decrypt(packed, key) {
   return Buffer.concat([decipher.update(ciphertext), decipher.final()]);
 }
 
-/**
- * Sign data with Ed25519 private key.
- * @param {Buffer|Uint8Array} data
- * @param {string} privateKeyBase64Url
- * @returns {string} Base64url signature
- */
-function sign(data, privateKeyBase64Url) {
-  const keyBuf = fromBase64Url(privateKeyBase64Url, 256);
+const privateKeyCache = new Map();
+const publicKeyCache = new Map();
+
+function getPrivateKey(keyStrOrObj) {
+  if (crypto.KeyObject && keyStrOrObj instanceof crypto.KeyObject) return keyStrOrObj;
+  if (privateKeyCache.has(keyStrOrObj)) return privateKeyCache.get(keyStrOrObj);
+  const keyBuf = fromBase64Url(keyStrOrObj, 256);
   const key = crypto.createPrivateKey({
     key: keyBuf,
     format: 'der',
     type: 'pkcs8',
   });
+  privateKeyCache.set(keyStrOrObj, key);
+  return key;
+}
+
+function getPublicKey(keyStrOrObj) {
+  if (crypto.KeyObject && keyStrOrObj instanceof crypto.KeyObject) return keyStrOrObj;
+  if (publicKeyCache.has(keyStrOrObj)) return publicKeyCache.get(keyStrOrObj);
+  const keyBuf = fromBase64Url(keyStrOrObj, 256);
+  const key = crypto.createPublicKey({
+    key: keyBuf,
+    format: 'der',
+    type: 'spki',
+  });
+  publicKeyCache.set(keyStrOrObj, key);
+  return key;
+}
+
+/**
+ * Sign data with Ed25519 private key.
+ * @param {Buffer|Uint8Array} data
+ * @param {string|crypto.KeyObject} privateKeyInput Base64url signature or KeyObject
+ * @returns {string} Base64url signature
+ */
+function sign(data, privateKeyInput) {
+  const key = getPrivateKey(privateKeyInput);
   const dataBuf = Buffer.isBuffer(data) ? data : Buffer.from(data);
   const sig = crypto.sign(null, dataBuf, key);
   return toBase64Url(sig);
@@ -94,20 +118,15 @@ function sign(data, privateKeyBase64Url) {
  * Verify Ed25519 signature. Uses constant-time comparison internally by Node crypto.verify.
  * @param {Buffer|Uint8Array} data
  * @param {string} signatureBase64Url
- * @param {string} publicKeyBase64Url
+ * @param {string|crypto.KeyObject} publicKeyInput Base64url signature or KeyObject
  * @returns {boolean}
  */
-function verifySignature(data, signatureBase64Url, publicKeyBase64Url) {
-  const keyBuf = fromBase64Url(publicKeyBase64Url, 256);
+function verifySignature(data, signatureBase64Url, publicKeyInput) {
   const sigBuf = fromBase64Url(signatureBase64Url, 256);
   if (sigBuf.length !== ED25519_SIGNATURE_LENGTH) {
     return false;
   }
-  const key = crypto.createPublicKey({
-    key: keyBuf,
-    format: 'der',
-    type: 'spki',
-  });
+  const key = getPublicKey(publicKeyInput);
   return crypto.verify(null, data, key, sigBuf);
 }
 

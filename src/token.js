@@ -10,7 +10,7 @@ const cbor = require('./cbor.js');
 const { PROTOCOL_VERSION, TOKEN_TYPES, DEFAULT_EXPIRES_IN_SECONDS, MAX_TOKEN_LENGTH } = constants;
 
 function generateJti() {
-  return crypto.randomBytes(16).toString('hex');
+  return crypto.randomUUID();
 }
 
 function validateClientInfo(clientInfo) {
