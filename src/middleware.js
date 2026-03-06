@@ -1,22 +1,13 @@
 'use strict';
 
-const token = require('./token.js');
 const { VerificationError } = require('./errors.js');
-const constants = require('./constants.js');
 
-const { BLOCK_DURATION_MS, MAX_FAILED_ATTEMPTS_BEFORE_BLOCK } = constants;
+const BLOCK_DURATION_MS = 15 * 60 * 1000;
+const MAX_FAILED_ATTEMPTS_BEFORE_BLOCK = 10;
 
-/** @type {Map<string, { blockedUntil: number }>} */
 const blockStore = new Map();
-
-/** @type {Map<string, { count: number }>} */
 const failCountStore = new Map();
 
-/**
- * Extract client IP and User-Agent from request. Safe for proxies (X-Forwarded-For, X-Real-IP).
- * @param {{ headers?: Record<string, string|string[]|undefined>, socket?: { remoteAddress?: string } }} req
- * @returns {{ ip: string, userAgent: string }}
- */
 function getClientInfo(req) {
   const raw = req?.headers?.['x-forwarded-for'];
   const first = Array.isArray(raw) ? raw[0] : raw;
@@ -30,10 +21,6 @@ function getClientInfo(req) {
   return { ip, userAgent };
 }
 
-/**
- * @param {string} ip
- * @returns {boolean}
- */
 function isBlocked(ip) {
   const entry = blockStore.get(ip);
   if (!entry) return false;
@@ -42,20 +29,11 @@ function isBlocked(ip) {
   return false;
 }
 
-/**
- * @param {string} ip
- */
 function blockIp(ip) {
   blockStore.set(ip, { blockedUntil: Date.now() + BLOCK_DURATION_MS });
   failCountStore.delete(ip);
 }
 
-/**
- * Increment failed attempt count for IP. Returns true if IP should now be blocked.
- * @param {string} ip
- * @param {number} threshold
- * @returns {boolean}
- */
 function recordFailedAttempt(ip, threshold) {
   const entry = failCountStore.get(ip);
   const count = entry ? entry.count + 1 : 1;
@@ -63,53 +41,55 @@ function recordFailedAttempt(ip, threshold) {
   return count >= threshold;
 }
 
-/**
- * Express-compatible middleware. Verifies Authorization: Bearer <token> and attaches payload to req.aegiss.
- * Blocks IP only after maxFailedAttempts failed verifications (default 10), not on missing header.
- * @param {string} publicKey Base64url Ed25519 public key
- * @param {{ minIat?: number, revokedJtis?: Set<string>|((jti: string) => boolean), maxFailedAttempts?: number }} [options] maxFailedAttempts: block after this many failures (default 10)
- * @returns {(req: import('express').Request, res: import('express').Response, next: import('express').NextFunction) => void}
- */
-function createVerifyMiddleware(publicKey, options = {}) {
-  if (!publicKey || typeof publicKey !== 'string') {
-    throw new Error('publicKey is required');
+function createVerifyMiddleware(publicKeyHex, options = {}) {
+  // We need `verify` from index.js eventually, but we can't require index.js directly here to avoid circular dependencies easily if it's imported at the top,
+  // so we require native here for actual verification:
+  const native = require('../artifacts/index.js');
+
+  if (!publicKeyHex || typeof publicKeyHex !== 'string') {
+    throw new Error('publicKeyHex is required');
   }
   const maxFailedAttempts =
     typeof options.maxFailedAttempts === 'number' && options.maxFailedAttempts > 0
       ? options.maxFailedAttempts
       : MAX_FAILED_ATTEMPTS_BEFORE_BLOCK;
+
   return function verifyMiddleware(req, res, next) {
     const { ip, userAgent } = getClientInfo(req);
     if (isBlocked(ip)) {
-      res.status(429).json({ error: 'Too many failed attempts. Try again later.' });
+      if (res.status) res.status(429).json({ error: 'Too many failed attempts. Try again later.' });
       return;
     }
     const auth = req.headers?.authorization;
     if (!auth || typeof auth !== 'string' || !auth.startsWith('Bearer ')) {
-      res.status(401).json({ error: 'Unauthorized' });
+      if (res.status) res.status(401).json({ error: 'Unauthorized' });
       return;
     }
     const tokenString = auth.slice(7).trim();
     const clientInfo = { ip, userAgent };
+    
     try {
-      const payload = token.verify(tokenString, publicKey, clientInfo, options);
+      const payloadString = native.verify(tokenString, publicKeyHex, clientInfo);
+      
+      let payload;
+      try {
+        payload = JSON.parse(payloadString);
+      } catch {
+        payload = payloadString;
+      }
+      
       failCountStore.delete(ip);
       req.aegiss = payload;
-      next();
+      if (next) next();
     } catch (err) {
-      if (err instanceof VerificationError) {
-        if (recordFailedAttempt(ip, maxFailedAttempts)) {
-          blockIp(ip);
-        }
+      if (recordFailedAttempt(ip, maxFailedAttempts)) {
+        blockIp(ip);
       }
-      res.status(401).json({ error: 'Unauthorized' });
+      if (res.status) res.status(401).json({ error: 'Unauthorized' });
     }
   };
 }
 
-/**
- * Clear in-memory block list and failure counts (e.g. for tests).
- */
 function clearBlockList() {
   blockStore.clear();
   failCountStore.clear();
@@ -120,5 +100,5 @@ module.exports = {
   getClientInfo,
   clearBlockList,
   isBlocked,
-  BLOCK_DURATION_MS,
+  BLOCK_DURATION_MS
 };

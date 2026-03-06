@@ -1,0 +1,10 @@
+D:\Software\aegiss\target\debug\deps\napi_derive-92d96fb983e62c86.d: C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\lib.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\compat_macro.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\expand.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\parser\mod.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\parser\attrs.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\expand\napi.rs
+
+D:\Software\aegiss\target\debug\deps\napi_derive-92d96fb983e62c86.dll: C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\lib.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\compat_macro.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\expand.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\parser\mod.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\parser\attrs.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\expand\napi.rs
+
+C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\lib.rs:
+C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\compat_macro.rs:
+C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\expand.rs:
+C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\parser\mod.rs:
+C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\parser\attrs.rs:
+C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\napi-derive-2.16.13\src\expand\napi.rs:

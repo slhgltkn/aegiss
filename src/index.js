@@ -1,26 +1,30 @@
 'use strict';
 
-const crypto = require('./crypto.js');
-const token = require('./token.js');
+// We import the loader produced by NAPI-RS, representing the NAPI binary compiled from Rust.
+// The index.js file inside the 'artifacts' folder resolves and loads the appropriate binary 
+// (e.g., 'aegiss.win32-x64-msvc.node') for the host architecture.
+const native = require('../artifacts/index.js'); 
 const middleware = require('./middleware.js');
 const { VerificationError } = require('./errors.js');
 
 module.exports = {
-  generateKeys: crypto.generateKeys,
-  encrypt: crypto.encrypt,
-  decrypt: crypto.decrypt,
-  sign: token.sign,
-  verify: token.verify,
-  hashFingerprint: crypto.hashFingerprint,
-  toBase64Url: crypto.toBase64Url,
-  fromBase64Url: crypto.fromBase64Url,
+  // HIGH-PERFORMANCE RUST NATIVE METHODS (Core Engine)
+  sign: native.sign,
+  verify: native.verify,
+  decode: native.decode,
+
+  // MIDDLEWARE AND UTILITIES (For framework integrations like Express.js)
   createVerifyMiddleware: middleware.createVerifyMiddleware,
   getClientInfo: middleware.getClientInfo,
   clearBlockList: middleware.clearBlockList,
   isBlocked: middleware.isBlocked,
+  
+  // ERRORS AND CONSTANTS
   VerificationError,
-  CHACHA_KEY_LENGTH: crypto.CHACHA_KEY_LENGTH,
-  CHACHA_IV_LENGTH: crypto.CHACHA_IV_LENGTH,
-  AUTH_TAG_LENGTH: crypto.AUTH_TAG_LENGTH,
   BLOCK_DURATION_MS: middleware.BLOCK_DURATION_MS,
+  
+  // ENCRYPTION PROTOCOLS
+  // Entirely offloaded to Rust utilizing ChaCha20Poly1305 encryption.
+  encrypt: native.encrypt,
+  decrypt: native.decrypt,
 };

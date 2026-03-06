@@ -1,0 +1,12 @@
+D:\Software\aegiss\target\release\deps\half-b1e0c7e1932e76b5.d: C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\lib.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\bfloat.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\bfloat\convert.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\binary16.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\binary16\convert.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\slice.rs
+
+D:\Software\aegiss\target\release\deps\libhalf-b1e0c7e1932e76b5.rlib: C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\lib.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\bfloat.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\bfloat\convert.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\binary16.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\binary16\convert.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\slice.rs
+
+D:\Software\aegiss\target\release\deps\libhalf-b1e0c7e1932e76b5.rmeta: C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\lib.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\bfloat.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\bfloat\convert.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\binary16.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\binary16\convert.rs C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\slice.rs
+
+C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\lib.rs:
+C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\bfloat.rs:
+C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\bfloat\convert.rs:
+C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\binary16.rs:
+C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\binary16\convert.rs:
+C:\Users\Huawei\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\half-1.8.3\src\slice.rs:

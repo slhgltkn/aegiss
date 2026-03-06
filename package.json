@@ -1,23 +1,35 @@
 {
   "name": "aegiss-token",
-  "version": "1.1.0",
-  "description": "Security-first, self-defending token library for Node.js. Ed25519, ChaCha20-Poly1305, CBOR, context binding. Zero dependencies.",
+  "version": "2.0.0",
+  "description": "Security-first, self-defending token library for Node.js. Powered by Rust, Ed25519, ChaCha20-Poly1305, CBOR, context binding. Zero JS dependencies.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "engines": {
     "node": ">=18"
+  },
+  "napi": {
+    "name": "aegiss",
+    "triples": {
+      "defaults": true,
+      "additional": [
+        "x86_64-unknown-linux-gnu",
+        "aarch64-apple-darwin",
+        "x86_64-pc-windows-msvc"
+      ]
+    }
   },
   "keywords": [
     "token",
     "jwt",
     "paseto",
     "ed25519",
-    "chacha20-poly1305",
+    "blake3",
     "cbor",
     "security",
     "authentication",
     "context-binding",
-    "zero-dependency"
+    "zero-dependency",
+    "rust"
   ],
   "author": "Salih Gultekin <me@salihgultek.in>",
   "license": "MIT",
@@ -27,14 +39,19 @@
   },
   "files": [
     "src",
+    "artifacts",
     "README.md",
     "SECURITY.md"
   ],
   "scripts": {
-    "example": "node examples/basic-usage.js",
-    "example:express": "node examples/express-middleware.js"
+    "artifacts": "napi artifacts",
+    "build": "napi build --platform --release ./artifacts",
+    "build:debug": "napi build --platform ./artifacts",
+    "prepublishOnly": "napi prepublish -t npm",
+    "universal": "napi universal",
+    "version": "napi version"
   },
-  "dependencies": {
-    "cbor-x": "^1.6.0"
+  "devDependencies": {
+    "@napi-rs/cli": "^2.18.4"
   }
 }
