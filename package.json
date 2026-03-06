@@ -44,14 +44,18 @@
     "SECURITY.md"
   ],
   "scripts": {
-    "artifacts": "napi artifacts",
     "build": "napi build --platform --release ./artifacts",
     "build:debug": "napi build --platform ./artifacts",
-    "prepublishOnly": "napi prepublish -t npm",
     "universal": "napi universal",
     "version": "napi version"
   },
   "devDependencies": {
     "@napi-rs/cli": "^2.18.4"
+  },
+  "optionalDependencies": {
+    "aegiss-token-win32-x64-msvc": "2.0.0",
+    "aegiss-token-darwin-x64": "2.0.0",
+    "aegiss-token-linux-x64-gnu": "2.0.0",
+    "aegiss-token-darwin-arm64": "2.0.0"
   }
 }
