@@ -1,0 +1,1221 @@
+   0.160665800s  INFO prepare_target{force=false package_id=aegiss v1.2.0 (D:\Software\aegiss) target="aegiss"}: cargo::core::compiler::fingerprint: stale: missing "D:\\Software\\aegiss\\target\\debug\\.fingerprint\\once_cell-7c88478beda95351\\dep-lib-once_cell"
+   0.163954100s  INFO prepare_target{force=false package_id=aegiss v1.2.0 (D:\Software\aegiss) target="aegiss"}: cargo::core::compiler::fingerprint: stale: missing "D:\\Software\\aegiss\\target\\debug\\.fingerprint\\getrandom-e16c8c190f95905b\\dep-lib-getrandom"
+   0.164156100s  INFO prepare_target{force=false package_id=aegiss v1.2.0 (D:\Software\aegiss) target="aegiss"}: cargo::core::compiler::fingerprint: stale: missing "D:\\Software\\aegiss\\target\\debug\\.fingerprint\\chacha20-b04ca64143ff9c1e\\dep-lib-chacha20"
+   0.164300200s  INFO prepare_target{force=false package_id=aegiss v1.2.0 (D:\Software\aegiss) target="aegiss"}: cargo::core::compiler::fingerprint: fingerprint error for aegiss v1.2.0 (D:\Software\aegiss)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("aegiss", ["cdylib"], "D:\\Software\\aegiss\\src-rust\\lib.rs", Edition2021) }
+   0.164344300s  INFO prepare_target{force=false package_id=aegiss v1.2.0 (D:\Software\aegiss) target="aegiss"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\aegiss-85e025b9ad56c4aa\lib-aegiss`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.178269500s  INFO prepare_target{force=false package_id=base64 v0.22.1 target="base64"}: cargo::core::compiler::fingerprint: fingerprint error for base64 v0.22.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("base64", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\base64-0.22.1\\src\\lib.rs", Edition2018) }
+   0.178302000s  INFO prepare_target{force=false package_id=base64 v0.22.1 target="base64"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\base64-007fb75cab410838\lib-base64`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.178728400s  INFO prepare_target{force=false package_id=blake3 v1.8.3 target="blake3"}: cargo::core::compiler::fingerprint: fingerprint error for blake3 v1.8.3/Check { test: false }/TargetInner { ..: lib_target("blake3", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\blake3-1.8.3\\src\\lib.rs", Edition2024) }
+   0.178748500s  INFO prepare_target{force=false package_id=blake3 v1.8.3 target="blake3"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\blake3-d51a78d58c85a494\lib-blake3`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.181547000s  INFO prepare_target{force=false package_id=chacha20poly1305 v0.10.1 target="chacha20poly1305"}: cargo::core::compiler::fingerprint: fingerprint error for chacha20poly1305 v0.10.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("chacha20poly1305", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\chacha20poly1305-0.10.1\\src\\lib.rs", Edition2021) }
+   0.181583000s  INFO prepare_target{force=false package_id=chacha20poly1305 v0.10.1 target="chacha20poly1305"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\chacha20poly1305-61e53f50320e281f\lib-chacha20poly1305`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.182217100s  INFO prepare_target{force=false package_id=aead v0.5.2 target="aead"}: cargo::core::compiler::fingerprint: fingerprint error for aead v0.5.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("aead", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\aead-0.5.2\\src\\lib.rs", Edition2021) }
+   0.182249000s  INFO prepare_target{force=false package_id=aead v0.5.2 target="aead"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\aead-c5710484a522a3d6\lib-aead`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.182668000s  INFO prepare_target{force=false package_id=crypto-common v0.1.7 target="crypto_common"}: cargo::core::compiler::fingerprint: fingerprint error for crypto-common v0.1.7/Check { test: false }/TargetInner { ..: lib_target("crypto_common", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\crypto-common-0.1.7\\src\\lib.rs", Edition2018) }
+   0.182692500s  INFO prepare_target{force=false package_id=crypto-common v0.1.7 target="crypto_common"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\crypto-common-527ac0c15853e2a9\lib-crypto_common`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.183011900s  INFO prepare_target{force=false package_id=generic-array v0.14.7 target="generic_array"}: cargo::core::compiler::fingerprint: fingerprint error for generic-array v0.14.7/Check { test: false }/TargetInner { ..: lib_target("generic_array", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\generic-array-0.14.7\\src\\lib.rs", Edition2015) }
+   0.183029600s  INFO prepare_target{force=false package_id=generic-array v0.14.7 target="generic_array"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\generic-array-410a4f3f9eb36c63\lib-generic_array`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.184451100s  INFO prepare_target{force=false package_id=typenum v1.19.0 target="typenum"}: cargo::core::compiler::fingerprint: fingerprint error for typenum v1.19.0/Check { test: false }/TargetInner { ..: lib_target("typenum", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\typenum-1.19.0\\src\\lib.rs", Edition2018) }
+   0.184486700s  INFO prepare_target{force=false package_id=typenum v1.19.0 target="typenum"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\typenum-732572f2b7e4c287\lib-typenum`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_libgit2_prerelease
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: git_midx_writer_dump
+  22: git_filter_source_repo
+  23: git_midx_writer_dump
+  24: BaseThreadInitThunk
+  25: RtlUserThreadStart
+   0.185910100s  INFO prepare_target{force=false package_id=rand_core v0.6.4 target="rand_core"}: cargo::core::compiler::fingerprint: fingerprint error for rand_core v0.6.4/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rand_core", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rand_core-0.6.4\\src\\lib.rs", Edition2018) }
+   0.185949100s  INFO prepare_target{force=false package_id=rand_core v0.6.4 target="rand_core"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\rand_core-6bbe4c472f10e29d\lib-rand_core`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.186449800s  INFO prepare_target{force=false package_id=chacha20 v0.9.1 target="chacha20"}: cargo::core::compiler::fingerprint: fingerprint error for chacha20 v0.9.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("chacha20", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\chacha20-0.9.1\\src\\lib.rs", Edition2021) }
+   0.186471700s  INFO prepare_target{force=false package_id=chacha20 v0.9.1 target="chacha20"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\chacha20-1a5d43c00178b5c7\lib-chacha20`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.186861500s  INFO prepare_target{force=false package_id=cipher v0.4.4 target="cipher"}: cargo::core::compiler::fingerprint: fingerprint error for cipher v0.4.4/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("cipher", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\cipher-0.4.4\\src\\lib.rs", Edition2021) }
+   0.186884000s  INFO prepare_target{force=false package_id=cipher v0.4.4 target="cipher"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\cipher-7320f21c249477f9\lib-cipher`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.187209100s  INFO prepare_target{force=false package_id=inout v0.1.4 target="inout"}: cargo::core::compiler::fingerprint: fingerprint error for inout v0.1.4/Check { test: false }/TargetInner { ..: lib_target("inout", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\inout-0.1.4\\src\\lib.rs", Edition2021) }
+   0.187225000s  INFO prepare_target{force=false package_id=inout v0.1.4 target="inout"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\inout-dcc830ba0e32eb29\lib-inout`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.187787900s  INFO prepare_target{force=false package_id=poly1305 v0.8.0 target="poly1305"}: cargo::core::compiler::fingerprint: fingerprint error for poly1305 v0.8.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("poly1305", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\poly1305-0.8.0\\src\\lib.rs", Edition2021) }
+   0.187807600s  INFO prepare_target{force=false package_id=poly1305 v0.8.0 target="poly1305"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\poly1305-994fb28a1be0ce15\lib-poly1305`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.188522600s  INFO prepare_target{force=false package_id=universal-hash v0.5.1 target="universal_hash"}: cargo::core::compiler::fingerprint: fingerprint error for universal-hash v0.5.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("universal_hash", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\universal-hash-0.5.1\\src\\lib.rs", Edition2021) }
+   0.188572600s  INFO prepare_target{force=false package_id=universal-hash v0.5.1 target="universal_hash"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\universal-hash-ff8cf2d9d71fed93\lib-universal_hash`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.189092100s  INFO prepare_target{force=false package_id=ed25519-dalek v2.2.0 target="ed25519_dalek"}: cargo::core::compiler::fingerprint: fingerprint error for ed25519-dalek v2.2.0/Check { test: false }/TargetInner { ..: lib_target("ed25519_dalek", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\ed25519-dalek-2.2.0\\src\\lib.rs", Edition2021) }
+   0.189112900s  INFO prepare_target{force=false package_id=ed25519-dalek v2.2.0 target="ed25519_dalek"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\ed25519-dalek-bb8d8df61a135133\lib-ed25519_dalek`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.189591100s  INFO prepare_target{force=false package_id=curve25519-dalek v4.1.3 target="curve25519_dalek"}: cargo::core::compiler::fingerprint: fingerprint error for curve25519-dalek v4.1.3/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("curve25519_dalek", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\curve25519-dalek-4.1.3\\src\\lib.rs", Edition2021) }
+   0.189611500s  INFO prepare_target{force=false package_id=curve25519-dalek v4.1.3 target="curve25519_dalek"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\curve25519-dalek-ca38604ce9333f3f\lib-curve25519_dalek`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.192726500s  INFO prepare_target{force=false package_id=digest v0.10.7 target="digest"}: cargo::core::compiler::fingerprint: fingerprint error for digest v0.10.7/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("digest", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\digest-0.10.7\\src\\lib.rs", Edition2018) }
+   0.192751100s  INFO prepare_target{force=false package_id=digest v0.10.7 target="digest"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\digest-74f71e983e857d6f\lib-digest`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.193092400s  INFO prepare_target{force=false package_id=block-buffer v0.10.4 target="block_buffer"}: cargo::core::compiler::fingerprint: fingerprint error for block-buffer v0.10.4/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("block_buffer", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\block-buffer-0.10.4\\src\\lib.rs", Edition2018) }
+   0.193112300s  INFO prepare_target{force=false package_id=block-buffer v0.10.4 target="block_buffer"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\block-buffer-c9511f3323bcc6bb\lib-block_buffer`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.193456300s  INFO prepare_target{force=false package_id=ed25519 v2.2.3 target="ed25519"}: cargo::core::compiler::fingerprint: fingerprint error for ed25519 v2.2.3/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("ed25519", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\ed25519-2.2.3\\src\\lib.rs", Edition2021) }
+   0.193478200s  INFO prepare_target{force=false package_id=ed25519 v2.2.3 target="ed25519"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\ed25519-ad42e86f66c5d0ae\lib-ed25519`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.194072500s  INFO prepare_target{force=false package_id=sha2 v0.10.9 target="sha2"}: cargo::core::compiler::fingerprint: fingerprint error for sha2 v0.10.9/Check { test: false }/TargetInner { ..: lib_target("sha2", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\sha2-0.10.9\\src\\lib.rs", Edition2018) }
+   0.194092200s  INFO prepare_target{force=false package_id=sha2 v0.10.9 target="sha2"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\sha2-86ed592faa803bc2\lib-sha2`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.194496900s  INFO prepare_target{force=false package_id=hex v0.4.3 target="hex"}: cargo::core::compiler::fingerprint: fingerprint error for hex v0.4.3/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hex", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\hex-0.4.3\\src\\lib.rs", Edition2018) }
+   0.194514200s  INFO prepare_target{force=false package_id=hex v0.4.3 target="hex"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\hex-d43717e055d4f082\lib-hex`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.194784100s  INFO prepare_target{force=false package_id=napi v2.16.17 target="napi"}: cargo::core::compiler::fingerprint: fingerprint error for napi v2.16.17/Check { test: false }/TargetInner { doctest: false, ..: lib_target("napi", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\napi-2.16.17\\src\\lib.rs", Edition2021) }
+   0.194801600s  INFO prepare_target{force=false package_id=napi v2.16.17 target="napi"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\napi-a1773594e6d421df\lib-napi`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.195489800s  INFO prepare_target{force=false package_id=napi-sys v2.4.0 target="napi_sys"}: cargo::core::compiler::fingerprint: fingerprint error for napi-sys v2.4.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("napi_sys", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\napi-sys-2.4.0\\src\\lib.rs", Edition2021) }
+   0.195508600s  INFO prepare_target{force=false package_id=napi-sys v2.4.0 target="napi_sys"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\napi-sys-6e1b3d4416f59dc1\lib-napi_sys`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.196473200s  INFO prepare_target{force=false package_id=once_cell v1.21.3 target="once_cell"}: cargo::core::compiler::fingerprint: fingerprint error for once_cell v1.21.3/Check { test: false }/TargetInner { ..: lib_target("once_cell", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\once_cell-1.21.3\\src\\lib.rs", Edition2021) }
+   0.196506000s  INFO prepare_target{force=false package_id=once_cell v1.21.3 target="once_cell"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\once_cell-7c88478beda95351\lib-once_cell`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.196945700s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde-1.0.228\\src\\lib.rs", Edition2021) }
+   0.196967700s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\serde-3dd586f6061c0b2c\lib-serde`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.198019200s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde_core", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_core-1.0.228\\src\\lib.rs", Edition2021) }
+   0.198042100s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\serde_core-5068606f78f28f71\lib-serde_core`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.199258600s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="serde_json"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.149/Check { test: false }/TargetInner { ..: lib_target("serde_json", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_json-1.0.149\\src\\lib.rs", Edition2021) }
+   0.199293200s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="serde_json"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\serde_json-47470f17becb1a55\lib-serde_json`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.199904600s  INFO prepare_target{force=false package_id=memchr v2.8.0 target="memchr"}: cargo::core::compiler::fingerprint: fingerprint error for memchr v2.8.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("memchr", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\memchr-2.8.0\\src\\lib.rs", Edition2021) }
+   0.199925300s  INFO prepare_target{force=false package_id=memchr v2.8.0 target="memchr"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\memchr-a4db2fac3e6fdd00\lib-memchr`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.201062200s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="zmij"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.21/Check { test: false }/TargetInner { ..: lib_target("zmij", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\zmij-1.0.21\\src\\lib.rs", Edition2021) }
+   0.201091300s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="zmij"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\zmij-7ebe2ebb87e20be7\lib-zmij`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.204132100s  INFO prepare_target{force=false package_id=rand v0.8.5 target="rand"}: cargo::core::compiler::fingerprint: fingerprint error for rand v0.8.5/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rand", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rand-0.8.5\\src\\lib.rs", Edition2018) }
+   0.204162800s  INFO prepare_target{force=false package_id=rand v0.8.5 target="rand"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\rand-a02f4b966b58fc47\lib-rand`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.204533800s  INFO prepare_target{force=false package_id=rand_chacha v0.3.1 target="rand_chacha"}: cargo::core::compiler::fingerprint: fingerprint error for rand_chacha v0.3.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rand_chacha", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rand_chacha-0.3.1\\src\\lib.rs", Edition2018) }
+   0.204557500s  INFO prepare_target{force=false package_id=rand_chacha v0.3.1 target="rand_chacha"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\rand_chacha-f67f635af059f21e\lib-rand_chacha`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.204894100s  INFO prepare_target{force=false package_id=ppv-lite86 v0.2.21 target="ppv_lite86"}: cargo::core::compiler::fingerprint: fingerprint error for ppv-lite86 v0.2.21/Check { test: false }/TargetInner { ..: lib_target("ppv_lite86", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\ppv-lite86-0.2.21\\src\\lib.rs", Edition2021) }
+   0.204927700s  INFO prepare_target{force=false package_id=ppv-lite86 v0.2.21 target="ppv_lite86"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\ppv-lite86-cd5da04e5e414c12\lib-ppv_lite86`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.205232900s  INFO prepare_target{force=false package_id=zerocopy v0.8.40 target="zerocopy"}: cargo::core::compiler::fingerprint: fingerprint error for zerocopy v0.8.40/Check { test: false }/TargetInner { ..: lib_target("zerocopy", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\zerocopy-0.8.40\\src\\lib.rs", Edition2021) }
+   0.205248400s  INFO prepare_target{force=false package_id=zerocopy v0.8.40 target="zerocopy"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\zerocopy-58b63e2b16511151\lib-zerocopy`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.206190700s  INFO prepare_target{force=false package_id=serde_cbor v0.11.2 target="serde_cbor"}: cargo::core::compiler::fingerprint: fingerprint error for serde_cbor v0.11.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("serde_cbor", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_cbor-0.11.2\\src\\lib.rs", Edition2018) }
+   0.206239300s  INFO prepare_target{force=false package_id=serde_cbor v0.11.2 target="serde_cbor"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\serde_cbor-592c241812fa1320\lib-serde_cbor`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.206759000s  INFO prepare_target{force=false package_id=uuid v1.22.0 target="uuid"}: cargo::core::compiler::fingerprint: fingerprint error for uuid v1.22.0/Check { test: false }/TargetInner { ..: lib_target("uuid", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\uuid-1.22.0\\src\\lib.rs", Edition2021) }
+   0.206777600s  INFO prepare_target{force=false package_id=uuid v1.22.0 target="uuid"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\uuid-c1f74dab621ea885\lib-uuid`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.207236400s  INFO prepare_target{force=false package_id=getrandom v0.4.2 target="getrandom"}: cargo::core::compiler::fingerprint: fingerprint error for getrandom v0.4.2/Check { test: false }/TargetInner { ..: lib_target("getrandom", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\getrandom-0.4.2\\src\\lib.rs", Edition2024) }
+   0.207254800s  INFO prepare_target{force=false package_id=getrandom v0.4.2 target="getrandom"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\getrandom-e16c8c190f95905b\lib-getrandom`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.208294300s  INFO prepare_target{force=false package_id=rand v0.10.0 target="rand"}: cargo::core::compiler::fingerprint: fingerprint error for rand v0.10.0/Check { test: false }/TargetInner { ..: lib_target("rand", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rand-0.10.0\\src\\lib.rs", Edition2024) }
+   0.208314200s  INFO prepare_target{force=false package_id=rand v0.10.0 target="rand"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\rand-0de0d47e5d1c4996\lib-rand`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.208700400s  INFO prepare_target{force=false package_id=chacha20 v0.10.0 target="chacha20"}: cargo::core::compiler::fingerprint: fingerprint error for chacha20 v0.10.0/Check { test: false }/TargetInner { ..: lib_target("chacha20", ["lib"], "C:\\Users\\Huawei\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\chacha20-0.10.0\\src\\lib.rs", Edition2024) }
+   0.208717500s  INFO prepare_target{force=false package_id=chacha20 v0.10.0 target="chacha20"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\chacha20-b04ca64143ff9c1e\lib-chacha20`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.209381200s  INFO prepare_target{force=false package_id=aegiss v1.2.0 (D:\Software\aegiss) target="aegiss"}: cargo::core::compiler::fingerprint: fingerprint error for aegiss v1.2.0 (D:\Software\aegiss)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("aegiss", ["cdylib"], "D:\\Software\\aegiss\\src-rust\\lib.rs", Edition2021) }
+   0.209413900s  INFO prepare_target{force=false package_id=aegiss v1.2.0 (D:\Software\aegiss) target="aegiss"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Software\aegiss\target\debug\.fingerprint\aegiss-af480176c6b69921\test-lib-aegiss`
+
+Caused by:
+    Sistem belirtilen dosyayı bulamıyor. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking rand_core v0.6.4
+    Checking memchr v2.8.0
+    Checking typenum v1.19.0
+    Checking serde_core v1.0.228
+    Checking zerocopy v0.8.40
+    Checking getrandom v0.4.2
+    Checking zmij v1.0.21
+    Checking chacha20 v0.10.0
+    Checking ed25519 v2.2.3
+    Checking napi-sys v2.4.0
+    Checking once_cell v1.21.3
+    Checking blake3 v1.8.3
+    Checking base64 v0.22.1
+    Checking hex v0.4.3
+    Checking rand v0.10.0
+    Checking generic-array v0.14.7
+    Checking uuid v1.22.0
+    Checking crypto-common v0.1.7
+    Checking block-buffer v0.10.4
+    Checking inout v0.1.4
+    Checking universal-hash v0.5.1
+    Checking aead v0.5.2
+    Checking digest v0.10.7
+    Checking cipher v0.4.4
+    Checking poly1305 v0.8.0
+    Checking curve25519-dalek v4.1.3
+    Checking sha2 v0.10.9
+    Checking chacha20 v0.9.1
+    Checking chacha20poly1305 v0.10.1
+    Checking serde v1.0.228
+    Checking serde_json v1.0.149
+    Checking ed25519-dalek v2.2.0
+    Checking serde_cbor v0.11.2
+    Checking napi v2.16.17
+    Checking ppv-lite86 v0.2.21
+    Checking rand_chacha v0.3.1
+    Checking rand v0.8.5
+    Checking aegiss v1.2.0 (D:\Software\aegiss)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.22s

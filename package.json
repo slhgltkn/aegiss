@@ -1,6 +1,6 @@
 {
   "name": "aegiss-token",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Security-first, self-defending token library for Node.js. Powered by Rust, Ed25519, ChaCha20-Poly1305, CBOR, context binding. Zero JS dependencies.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -13,8 +13,12 @@
       "defaults": true,
       "additional": [
         "x86_64-unknown-linux-gnu",
+        "x86_64-unknown-linux-musl",
         "aarch64-apple-darwin",
-        "x86_64-pc-windows-msvc"
+        "x86_64-apple-darwin",
+        "x86_64-pc-windows-msvc",
+        "aarch64-unknown-linux-gnu",
+        "armv7-unknown-linux-gnueabihf"
       ]
     }
   },
@@ -44,7 +48,8 @@
     "SECURITY.md"
   ],
   "scripts": {
-    "build": "napi build --platform --release ./artifacts",
+    "build": "napi build --release ./artifacts",
+    "build:platform": "napi build --platform --release ./artifacts",
     "build:debug": "napi build --platform ./artifacts",
     "universal": "napi universal",
     "version": "napi version"
@@ -54,8 +59,13 @@
   },
   "optionalDependencies": {
     "aegiss-token-win32-x64-msvc": "2.0.0",
+    "aegiss-token-win32-arm64-msvc": "2.0.0",
     "aegiss-token-darwin-x64": "2.0.0",
+    "aegiss-token-darwin-arm64": "2.0.0",
     "aegiss-token-linux-x64-gnu": "2.0.0",
-    "aegiss-token-darwin-arm64": "2.0.0"
+    "aegiss-token-linux-x64-musl": "2.0.0",
+    "aegiss-token-linux-arm64-gnu": "2.0.0",
+    "aegiss-token-linux-arm64-musl": "2.0.0",
+    "aegiss-token-linux-arm-gnueabihf": "2.0.0"
   }
 }
